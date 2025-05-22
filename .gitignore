@@ -1,0 +1,17 @@
+# CAIQ Excel file
+CAIQv4.0.3_STAR-Security-Questionnaire_Generated-at_2023-09-26.xlsx
+
+# Jekyll build output
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db 
