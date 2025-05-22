@@ -1,5 +1,5 @@
 ---
-layout: questionnaire
+layout: default
 title: CAIQ Domains
 ---
 
@@ -53,4 +53,4 @@ The CAIQ is organized into the following domains. Click on any domain to begin o
 - Supply Chain Management
 - Threat & Vulnerability Management
 
-[Start with Domain 1](/domains/domain1) 
+[Start with Domain 1]({{ '/domains/domain1' | relative_url }}) 

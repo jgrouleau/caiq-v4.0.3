@@ -1,5 +1,5 @@
 ---
-layout: questionnaire
+layout: default
 title: Welcome to CAIQ v4.0.3
 ---
 
