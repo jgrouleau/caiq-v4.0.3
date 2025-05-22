@@ -14,7 +14,7 @@ The Consensus Assessments Initiative Questionnaire (CAIQ) is a tool for cloud co
 
 ## Getting Started
 
-1. Review the [domains](/domains) to understand the scope of the assessment
+1. Review the [domains]({{ '/domains' | relative_url }}) to understand the scope of the assessment
 2. Begin with Domain 1: Information Security
 3. Complete each section at your own pace
 4. Save your progress as you go
@@ -24,4 +24,4 @@ The Consensus Assessments Initiative Questionnaire (CAIQ) is a tool for cloud co
 
 The CAIQ provides a set of yes/no questions a cloud consumer and cloud auditor may wish to ask of a cloud provider. It incorporates, where applicable, the recommendations specified in the CSA's Security Guidance for Critical Areas of Focus in Cloud Computing and the Cloud Controls Matrix (CCM).
 
-[Start Assessment](/domains/domain1) 
+[Start Assessment]({{ '/domains/domain1' | relative_url }}) 
