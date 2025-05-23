@@ -107,7 +107,7 @@ function showQuestion(qidx, total) {
 }
 
 function initQuillAndSaving(qidx) {
-  const block = document.querySelector('.question-block[data-qidx="' + qidx + '']');
+  const block = document.querySelector('.question-block[data-qidx="' + qidx + '"]');
   if (!block) return;
   const storageKey = block.querySelector('.caiq-answer').id.replace('caiq-answer-', '');
   const answerSel = block.querySelector('.caiq-answer');
@@ -122,8 +122,8 @@ function initQuillAndSaving(qidx) {
       modules: { toolbar: [ ['bold', 'italic', 'underline'], ['link'], [{ 'list': 'ordered'}, { 'list': 'bullet' }] ] }
     });
     cspDiv.classList.add('quill-initialized');
-     quillCSP.on('text-change', function() {
-      saveQuillContent(storageKey, quillCSP.root.innerHTML, 'cspImpl');
+    quillCSP.on('text-change', function() {
+      saveQuillContent(storageKey, quillCSP.root.innerHTML, 'cspImpl', false);
     });
   }
    if (cscDiv && !cscDiv.classList.contains('quill-initialized')) {
@@ -134,7 +134,7 @@ function initQuillAndSaving(qidx) {
     });
     cscDiv.classList.add('quill-initialized');
     quillCSC.on('text-change', function() {
-      saveQuillContent(storageKey, quillCSC.root.innerHTML, 'cscResp');
+      saveQuillContent(storageKey, quillCSC.root.innerHTML, 'cscResp', false);
     });
    }
 
@@ -152,12 +152,14 @@ function initQuillAndSaving(qidx) {
     showToast();
   }
 
-   function saveQuillContent(key, value, type) {
+   function saveQuillContent(key, value, type, showNotification = false) {
     const data = JSON.parse(localStorage.getItem(key) || '{}');
     if (type === 'cspImpl') data.cspImpl = value;
     if (type === 'cscResp') data.cscResp = value;
     localStorage.setItem(key, JSON.stringify(data));
-    // Toast is shown on blur for Quill editors, handled by event listener
+    if (showNotification) {
+      showToast(); // Only show toast notification when explicitly requested
+    }
   }
 
 
@@ -187,11 +189,11 @@ function initQuillAndSaving(qidx) {
   if (ownerSel) ownerSel.addEventListener('change', () => saveOwnership(storageKey, ownerSel.value));
   if (cspDiv) {
     const quillCSP = Quill.find(cspDiv); // Find Quill instance
-    if (quillCSP) quillCSP.root.addEventListener('blur', () => saveQuillContent(storageKey, quillCSP.root.innerHTML, 'cspImpl'));
+    if (quillCSP) quillCSP.root.addEventListener('blur', () => saveQuillContent(storageKey, quillCSP.root.innerHTML, 'cspImpl', true));
   }
   if (cscDiv) {
     const quillCSC = Quill.find(cscDiv); // Find Quill instance
-    if (quillCSC) quillCSC.root.addEventListener('blur', () => saveQuillContent(storageKey, quillCSC.root.innerHTML, 'cscResp'));
+    if (quillCSC) quillCSC.root.addEventListener('blur', () => saveQuillContent(storageKey, quillCSC.root.innerHTML, 'cscResp', true));
   }
 
   // Load answers on init
