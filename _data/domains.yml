@@ -1,0 +1,101 @@
+- slug: "audit-assurance"
+  name: "Audit & Assurance"
+  order: 1
+  question_page: "/domains/audit-assurance"
+  summary_page: "/domains/audit-assurance-summary"
+
+- slug: "app-interface-security"
+  name: "Application & Interface Security"
+  order: 2
+  question_page: "/domains/app-interface-security"
+  summary_page: "/domains/app-interface-security-summary"
+
+- slug: "business-continuity-management-and-operational-resilience"
+  name: "Business Continuity, Management, and Operational Resilience"
+  order: 3
+  question_page: "/domains/business-continuity-management-and-operational-resilience"
+  summary_page: "/domains/business-continuity-management-and-operational-resilience-summary"
+
+- slug: "change-control-and-configuration-management"
+  name: "Change Control and Configuration Management"
+  order: 4
+  question_page: "/domains/change-control-and-configuration-management"
+  summary_page: "/domains/change-control-and-configuration-management-summary"
+
+- slug: "cryptography-encryption-and-key-management"
+  name: "Cryptography, Encryption & Key Management"
+  order: 5
+  question_page: "/domains/cryptography-encryption-and-key-management"
+  summary_page: "/domains/cryptography-encryption-and-key-management-summary"
+
+- slug: "datacenter-security"
+  name: "Datacenter Security"
+  order: 6
+  question_page: "/domains/datacenter-security"
+  summary_page: "/domains/datacenter-security-summary"
+
+- slug: "data-security-and-privacy-lifecycle-management"
+  name: "Data Security and Privacy Lifecycle Management"
+  order: 7
+  question_page: "/domains/data-security-and-privacy-lifecycle-management"
+  summary_page: "/domains/data-security-and-privacy-lifecycle-management-summary"
+
+- slug: "governance-risk-and-compliance"
+  name: "Governance, Risk and Compliance"
+  order: 8
+  question_page: "/domains/governance-risk-and-compliance"
+  summary_page: "/domains/governance-risk-and-compliance-summary"
+
+- slug: "human-resources"
+  name: "Human Resources"
+  order: 9
+  question_page: "/domains/human-resources"
+  summary_page: "/domains/human-resources-summary"
+
+- slug: "identity-and-access-management"
+  name: "Identity & Access Management"
+  order: 10
+  question_page: "/domains/identity-and-access-management"
+  summary_page: "/domains/identity-and-access-management-summary"
+
+- slug: "interoperability-and-portability"
+  name: "Interoperability & Portability"
+  order: 11
+  question_page: "/domains/interoperability-and-portability"
+  summary_page: "/domains/interoperability-and-portability-summary"
+
+- slug: "infrastructure-and-virtualization-security"
+  name: "Infrastructure & Virtualization Security"
+  order: 12
+  question_page: "/domains/infrastructure-and-virtualization-security"
+  summary_page: "/domains/infrastructure-and-virtualization-security-summary"
+
+- slug: "logging-and-monitoring"
+  name: "Logging and Monitoring"
+  order: 13
+  question_page: "/domains/logging-and-monitoring"
+  summary_page: "/domains/logging-and-monitoring-summary"
+
+- slug: "security-incident-management-e-discovery-and-cloud-forensics"
+  name: "Security Incident Management, E-Discovery, & Cloud Forensics"
+  order: 14
+  question_page: "/domains/security-incident-management-e-discovery-and-cloud-forensics"
+  summary_page: "/domains/security-incident-management-e-discovery-and-cloud-forensics-summary"
+
+- slug: "supply-chain-management-transparency-and-accountability"
+  name: "Supply Chain Management, Transparency, and Accountability"
+  order: 15
+  question_page: "/domains/supply-chain-management-transparency-and-accountability"
+  summary_page: "/domains/supply-chain-management-transparency-and-accountability-summary"
+
+- slug: "threat-and-vulnerability-management"
+  name: "Threat & Vulnerability Management"
+  order: 16
+  question_page: "/domains/threat-and-vulnerability-management"
+  summary_page: "/domains/threat-and-vulnerability-management-summary"
+
+- slug: "universal-endpoint-management"
+  name: "Universal Endpoint Management"
+  order: 17
+  question_page: "/domains/universal-endpoint-management"
+  summary_page: "/domains/universal-endpoint-management-summary" 

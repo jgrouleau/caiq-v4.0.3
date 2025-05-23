@@ -1,0 +1,54 @@
+<div style="max-width: 700px; margin: 0 auto;">
+  <div style="background: #fff; border-radius: 12px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 2em 2em 1.5em 2em; margin-bottom: 2em;">
+    <div style="display: flex; align-items: center; margin-bottom: 0.5em;">
+      <span style="background: #007bff; color: #fff; font-weight: 600; border-radius: 4px; padding: 0.4em 1em; font-size: 1.1em; margin-right: 1em;">{{ include.id }}</span>
+      <span style="font-size: 1.25em; font-weight: bold; flex: 1;">{{ include.text }}</span>
+    </div>
+    
+    <!-- CCM Details
+    <div style="margin-bottom: 1.2em;">
+      <button class="toggle-details" style="background: none; border: none; color: #007bff; font-size: 1em; cursor: pointer; padding: 0;">Show CCM Details ▼</button>
+    </div>
+    <div class="details-section" style="display: none; background: #f8f9fa; border-radius: 6px; padding: 1em; margin-bottom: 1.2em; font-size: 0.98em; color: #444;">
+      <div><strong>CCM Control ID:</strong> {{ include.ccm_id }}</div>
+      <div><strong>CCM Control Specification:</strong> {{ include.spec }}</div>
+      <div><strong>CCM Domain Title:</strong> {{ include.domain }}</div>
+    </div>
+    -->
+    <div class="spec-details" style="background: #f8f9fa; border-radius: 6px; padding: 1em; margin-bottom: 1.2em; font-size: 0.98em; color: #444; font-style: italic;">
+      <div><strong>Control Specification:</strong> {{ include.spec }}</div>
+    </div>
+
+
+    <div style="display: flex; gap: 1em; margin-bottom: 1.2em; flex-wrap: wrap;">
+      <div style="flex: 1 1 220px; min-width: 220px;">
+        <label style="font-weight: bold;" for="caiq-answer-{{ include.storage_key }}">CSP CAIQ Answer:</label><br>
+        <select id="caiq-answer-{{ include.storage_key }}" class="caiq-answer" style="width: 100%; padding: 0.5em; border-radius: 4px; border: 1px solid #ccc; margin-top: 0.2em;">
+          <option value="">-- Select --</option>
+          <option>Yes</option>
+          <option>No</option>
+          <option>Not Applicable</option>
+        </select>
+      </div>
+      <div style="flex: 1 1 220px; min-width: 220px;">
+        <label style="font-weight: bold;" for="ssrm-ownership-{{ include.storage_key }}">SSRM Ownership:</label><br>
+        <select id="ssrm-ownership-{{ include.storage_key }}" class="ssrm-ownership" style="width: 100%; padding: 0.5em; border-radius: 4px; border: 1px solid #ccc; margin-top: 0.2em;">
+          <option value="">-- Select --</option>
+          <option>CSP-owned</option>
+          <option>CSC-owned</option>
+          <option>3rd-party outsourced</option>
+          <option>Shared CSP and CSC</option>
+          <option>Shared CSP and 3rd party</option>
+        </select>
+      </div>
+    </div>
+    <div style="margin-bottom: 1.2em;">
+      <label style="font-weight: bold;" for="csp-impl-desc-{{ include.storage_key }}">CSP Implementation Description:</label>
+      <div id="csp-impl-desc-{{ include.storage_key }}" class="csp-impl-desc" style="background:#f8f9fa; border:1px solid #ccc; border-radius:4px; min-height:80px; margin-top:0.2em;"></div>
+    </div>
+    <div style="margin-bottom: 1.2em;">
+      <label style="font-weight: bold;" for="csc-resp-{{ include.storage_key }}">CSC Responsibilities:</label>
+      <div id="csc-resp-{{ include.storage_key }}" class="csc-resp" style="background:#f8f9fa; border:1px solid #ccc; border-radius:4px; min-height:80px; margin-top:0.2em;"></div>
+    </div>
+  </div>
+</div> 
